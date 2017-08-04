@@ -1,0 +1,17 @@
+[
+{
+  "id" : 1,
+  "body" : "{greeting} {guest}, welcome to {hotel}. Your room number is {room}, have a great stay!",
+  "sample" : "Good evening Samantha, welcome to Hotel Panda Express. Your room number 127, have a great stay."
+},
+{
+  "id" : 2,
+  "body" : "{greeting} {guest}, I'm Sandy, Manager for {hotel}. We are delighted to have you as our guest. You will be staying in room number {room}",
+  "sample" : "Good afternoon Maggie, I'm Sandy, Manager for Hotel Panda Express. We are delighted to have you as our guest. You will be staying in room number 127. "
+},
+{
+  "id" : 3,
+  "body" : "Welcome to {hotel}! {greeting} {guest}, your room number is {room}. Have a wonderful stay with us!",
+  "sample" : "Welcome to Hotel Panda Express! Good afternoon Jacob, your room number is 127. Have a wonderful stay with us!"
+}
+]
