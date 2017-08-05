@@ -18,6 +18,10 @@ $ npm start
 ```
 **Note**: If you are running the code using Git-bash on a windows machine, use `node index.js` instead of `npm start`.
 
+## Changing phone number for texting
+
+Change the phone number in `/data/phoneNumber.json` to the number on which you want receieve texts.
+
 ## Design
 The program is broken down into various modules. Each modules consists of a function that serves a portion of the main task (generating and sending welcome text message).
 
@@ -27,7 +31,7 @@ The program is broken down into various modules. Each modules consists of a func
 
 `fillTemplate.js` replaces individual placeholders using `replacePlaceHolder.js` and generates a proper greeting, depending on the current time using `getGreeting.js`.
 
-Lastly, `sendText.js` deals with Twilio's API. It accepts a generated text message from `generateMessage.js` and a phone number.
+Lastly, `sendText.js` deals with Twilio's API. It accepts a generated text message from `generateMessage.js` and a phone number. The phone number is retrieved from `phoneNumber.json` in `/data` folder.
 
 ## What's next?
 
