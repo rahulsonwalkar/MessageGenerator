@@ -17,11 +17,15 @@ var hotelsList = JSON.parse(fs.readFileSync('./data/Companies.json'));
 var phoneNumber = JSON.parse(fs.readFileSync('./data/phoneNumber.json')).phoneNumber;
 
 logTemplates(templateList);
-rl.question('Enter the Template ID: ', function(templateID) {
+rl.question('Enter a choice for Template (1, 2 or 3) : ', function(templateID) {
+  console.log(" ");
   logGuests(guestsList);
-  rl.question('Enter the Guest ID: ', function(guestID){
+  rl.question('Enter a choice for Guest (1, 2, 3, 4, 5 or 6) : ', function(guestID){
+    console.log(" ");
     logHotels(hotelsList);
-    rl.question('Enter the Hotel ID: ', function(hotelID){
+    rl.question('Enter a choice for Hotel (1, 2, 3, 4 or 5) : ', function(hotelID){
+      console.log(" ");
+      console.log("Your message: ");
       console.log(generateMessage(templateID, guestID, hotelID)); //Generate message
       sendText(generateMessage(templateID, guestID, hotelID), phoneNumber); //Send Text through Twilio
     });
@@ -30,7 +34,10 @@ rl.question('Enter the Template ID: ', function(templateID) {
 
 //Print choices of Templates to the console.
 function logTemplates(list){
-  console.log('TEMPLATES: ');
+  console.log(" ");
+  console.log(" ");
+  console.log('Pick a Template: ');
+  console.log(" ");
   for (var i = 0; i < list.length; i++) {
     console.log(list[i].id + "  " + "Example: " + list[i].sample);
   }
@@ -38,7 +45,10 @@ function logTemplates(list){
 
 //Print choices of Hotels to the console.
 function logHotels(list){
-  console.log('HOTELS: ');
+  console.log(" ");
+  console.log(" ");
+  console.log('Pick a Hotel: ');
+  console.log(" ");
   for (var i = 0; i < list.length; i++) {
     console.log(list[i].id + "  " + list[i].company);
   }
@@ -46,7 +56,10 @@ function logHotels(list){
 
 //Print choices of Guests to the console.
 function logGuests(list){
-  console.log('GUESTS: ');
+  console.log(" ");
+  console.log(" ");
+  console.log('Pick a guest: ');
+  console.log(" ");
   for (var i = 0; i < list.length; i++) {
     console.log(list[i].id + "  " + list[i].firstName + " " + list[i].lastName);
   }
