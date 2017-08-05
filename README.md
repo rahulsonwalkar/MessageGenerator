@@ -20,7 +20,13 @@ $ npm start
 
 ## Changing phone number for texting
 
-Change the phone number in `/data/phoneNumber.json` to the number on which you want receieve texts.
+Change the phone number in `/data/phoneNumber.json` to the number on which you want to receieve texts.
+
+```
+{
+    "phoneNumber" : "+15038067016"
+}
+```
 
 ## Design
 The program is broken down into various modules. Each modules consists of a function that serves a portion of the main task (generating and sending welcome text message).
@@ -35,6 +41,6 @@ Lastly, `sendText.js` deals with Twilio's API. It accepts a generated text messa
 
 ## What's next?
 
-Implement proper error-handling (throw exceptions for edge-cases) and implement input validation for inputs from the terminal.
+⋅⋅* Implement proper error-handling (throw exceptions for edge-cases) and implement input validation for inputs from the terminal.
 
-Make it possible to add data to data files, for example: add new templates, guests, hotels.
+⋅⋅* Make it possible to add data to data files, for example: add new templates, guests, hotels.
