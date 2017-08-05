@@ -1,5 +1,8 @@
 # MessageGenerator
-Generate welcome text-messages for your hotel guests and send them using **Twilio**
+Generate welcome text-messages for your hotel guests and send them using **Twilio**.
+
+
+This service can also be integrated into your program as an API. [Documentation for the API can be found here](https://github.com/rahulsonwalkar/MessageGeneratorAPI).
 
 ## Getting started 
 
@@ -41,6 +44,6 @@ Lastly, `sendText.js` deals with Twilio's API. It accepts a generated text messa
 
 ## What's next?
 
-⋅⋅* Implement proper error-handling (throw exceptions for edge-cases) and implement input validation for inputs from the terminal.
++ Implement proper error-handling (throw exceptions for edge-cases) and implement input validation for inputs from the terminal.
 
-⋅⋅* Make it possible to add data to data files, for example: add new templates, guests, hotels.
++ Make it possible to add data to data files, for example: add new templates, guests, hotels.
