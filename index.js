@@ -14,6 +14,7 @@ const rl = readline.createInterface({
 var templateList = JSON.parse(fs.readFileSync('./data/templates.json'));
 var guestsList = JSON.parse(fs.readFileSync('./data/Guests.json'));
 var hotelsList = JSON.parse(fs.readFileSync('./data/Companies.json'));
+var phoneNumber = JSON.parse(fs.readFileSync('./data/phoneNumber.json')).phoneNumber;
 
 logTemplates(templateList);
 rl.question('Enter the Template ID: ', function(templateID) {
@@ -22,7 +23,7 @@ rl.question('Enter the Template ID: ', function(templateID) {
     logHotels(hotelsList);
     rl.question('Enter the Hotel ID: ', function(hotelID){
       console.log(generateMessage(templateID, guestID, hotelID)); //Generate message
-      sendText(generateMessage(templateID, guestID, hotelID), "+15038067016"); //Send Text through Twilio
+      sendText(generateMessage(templateID, guestID, hotelID), phoneNumber); //Send Text through Twilio
     });
   });
 });
