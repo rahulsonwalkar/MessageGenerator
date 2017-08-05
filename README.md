@@ -16,6 +16,8 @@ $ npm install
 ```
 $ npm start
 ```
+Note: If you are running the code on Git-bash on a windows machine, use `node index.js` instead of `npm start`.
+
 ## Design
 The program is broken down into various modules. Each modules consists of a function that serves a portion of the main task (generating and sending welcome text message).
 
@@ -26,3 +28,9 @@ The program is broken down into various modules. Each modules consists of a func
 `fillTemplate.js` replaces individual placeholders using `replacePlaceHolder.js` and generates a proper greeting, depending on the current time using `getGreeting.js`.
 
 Lastly, `sendText.js` deals with Twilio's API. It accepts a generated text message from `generateMessage.js` and a phone number.
+
+## What's next?
+
+Implement proper error-handling (throw exceptions for edge-cases) and implement input validation for inputs from the terminal.
+
+Make it possible to added data to data files. (Add new templates, guests, hotels)
