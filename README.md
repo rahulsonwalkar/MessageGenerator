@@ -33,4 +33,4 @@ Lastly, `sendText.js` deals with Twilio's API. It accepts a generated text messa
 
 Implement proper error-handling (throw exceptions for edge-cases) and implement input validation for inputs from the terminal.
 
-Make it possible to added data to data files. (Add new templates, guests, hotels)
+Make it possible to add data to data files, for example: add new templates, guests, hotels.
