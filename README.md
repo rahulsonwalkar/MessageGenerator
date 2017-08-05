@@ -16,7 +16,7 @@ $ npm install
 ```
 $ npm start
 ```
-Note: If you are running the code on Git-bash on a windows machine, use `node index.js` instead of `npm start`.
+**Note**: If you are running the code using Git-bash on a windows machine, use `node index.js` instead of `npm start`.
 
 ## Design
 The program is broken down into various modules. Each modules consists of a function that serves a portion of the main task (generating and sending welcome text message).
