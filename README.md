@@ -4,6 +4,10 @@ Generate welcome text-messages for your hotel guests and send them using **Twili
 
 This service can also be integrated into your program as an API. [Documentation for the API can be found here](https://github.com/rahulsonwalkar/MessageGeneratorAPI).
 
+
+<img src="http://i.imgur.com/BgC1Frz.gif/">
+
+
 ## Getting started 
 
 Clone or download the repo.
